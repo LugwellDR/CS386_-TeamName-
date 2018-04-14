@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DnDCompanion</string>
+    <string name="title_activity_character_sheet">CharacterSheet</string>
+</resources>
