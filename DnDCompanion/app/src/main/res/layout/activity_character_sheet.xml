@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -19,6 +20,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="text"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+
                 android:hint="Character Name"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -29,12 +33,16 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:inputType="text"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
                     android:hint="Class"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:inputType="text"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
                     android:hint="Race"/>
             </LinearLayout>
             <LinearLayout
@@ -46,12 +54,16 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:inputType="text"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
                     android:hint="Height"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:inputType="text"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
                     android:hint="Weight"/>
             </LinearLayout>
         </LinearLayout>
@@ -66,6 +78,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/borderback"
                 android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
                 android:text="Strength\n "
                 android:id="@+id/strtxt"/>
             <EditText
@@ -74,6 +88,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/borderback"
                 android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
                 android:text="Dexterity\n "
                 android:id="@+id/dextxt"/>
             <EditText
@@ -82,6 +98,8 @@
                 android:layout_weight=".8"
                 android:background="@drawable/borderback"
                 android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
                 android:text="Constitution\n "
                 android:id="@+id/contxt"/>
         </LinearLayout>
@@ -96,6 +114,8 @@
                 android:layout_weight=".49"
                 android:background="@drawable/borderback"
                 android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
                 android:text="Intelligence\n "
 
                 android:id="@+id/inttxt"/>
@@ -105,6 +125,8 @@
                 android:layout_weight=".9"
                 android:background="@drawable/borderback"
                 android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
                 android:text="Wisdom\n "
                 android:id="@+id/wistxt"/>
             <EditText
@@ -114,6 +136,8 @@
                 android:background="@drawable/borderback"
                 android:textAlignment="center"
                 android:text="Charisma\n "
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
                 android:id="@+id/chatxt"/>
         </LinearLayout>
         <Button
@@ -121,6 +145,8 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:text="Roll Stats"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
             android:visibility="gone"/>
         <LinearLayout
             android:layout_width="match_parent"
@@ -133,6 +159,8 @@
                 android:textAlignment="center"
                 android:background="@drawable/borderback"
                 android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
                 android:text="Health Points: \n"
                 android:textSize="25sp"
                 />
@@ -143,12 +171,11 @@
                 android:background="@drawable/borderback"
                 android:layout_weight="1"
                 android:text="Armor Class:\n"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
                 android:textSize="25sp"
                 />
         </LinearLayout>
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -159,14 +186,21 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Items:"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:background="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:text="Items"
                 android:textSize="25sp"/>
         </LinearLayout>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="text"
-            android:hint="Item"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:hint="Enter Item"
             android:id="@+id/itemInput"/>
         <Button
             android:layout_width="match_parent"
@@ -179,18 +213,28 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:id="@+id/charspells"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
             android:background="@drawable/borderback">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Spells:"
+                android:text="Spells"
+                android:background="@color/colorPrimaryDark"
+
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
                 android:textSize="25sp"/>
         </LinearLayout>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="text"
-            android:hint="Spell"
+            android:hint="Enter Spell"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
             android:id="@+id/spellInput"/>
         <Button
             android:layout_width="match_parent"
@@ -207,13 +251,20 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Languages Known:"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:text="Languages Known"
+                android:background="@color/colorPrimaryDark"
+                android:textAlignment="center"
                 android:textSize="25sp"/>
         </LinearLayout>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="text"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
             android:hint="Language"
             android:id="@+id/langInput"/>
         <Button
